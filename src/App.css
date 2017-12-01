@@ -109,3 +109,31 @@ body {
         border: 1px solid #ccc;
     }
 }
+
+
+/* //////////////////////// News bar/////////////////////////////// */
+
+.news {
+    margin-top: 2%;
+    background-color: rgb(66.3%, 66.3%, 66.3%);
+    border: 2px solid black;
+}
+
+
+/* /Interesting Topic ///////////////////////////////////////////////////////////// */
+
+.scrollMenu {
+    height: 150px;
+    overflow-y: auto;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.normalMenu {
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.leftMenu {
+    margin-top: 100px !important;
+}
