@@ -7,6 +7,7 @@ import {NewsBody} from './components/newsBody';
 import {InterestingTopic} from './components/interestingTopic';
 import {Region} from './components/region';
 import {Countries} from './components/countries';
+import {NewsChannel} from './components/newsChannel';
 class App extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class App extends Component {
             <br/>
             <br/>
             <InterestingTopic/>
+            <NewsChannel/>
             <Region/>
             <Countries/>
             </div>
