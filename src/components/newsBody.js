@@ -2,8 +2,6 @@
 // ─── IMPORTS ────────────────────────────────────────────────────────────────────
 //
 import React, { Component } from "react";
-// import newsapi from 'newsapi' //???
-// let NewsApi = require('newsapi'); //???
 import axios from "axios";
 //
 // ────────────────────────────────────────────────────────────────── IMPORTS ─────
@@ -14,6 +12,7 @@ import axios from "axios";
 //
 
 let posts = [];
+let newsImage= '';
 
 //
 // ─────────────────────────────────────────────────────────────────── VARS ─────
@@ -32,7 +31,7 @@ export class NewsBody extends Component {
   //
   // ────────────────────────────────────────────────────────────── CONSTRUCTOR ─────
   //
-
+  
   componentDidMount() {
     axios
       .get(
@@ -45,9 +44,11 @@ export class NewsBody extends Component {
         posts = res.data.articles;
         this.setState({
           posts
-        });
-      });
+        })
+      })
   }
+
+ 
 
   //
   // ───────────────────────────────────────────────────────────────── HANDLERS ─────
@@ -57,11 +58,14 @@ export class NewsBody extends Component {
     return (
       <div className="news">
         <ul>
-          {" "}
+          
           {this.state.posts.map((post, idx) => (
-            <li key={idx}> {post.title} </li>
-          ))}{" "}
-        </ul>{" "}
+            <li key={idx}>
+            <img src={post.urlToImage} alt=""/>
+             {post.title} 
+             </li>
+          ))}
+        </ul>
       </div>
     );
   }
