@@ -35,7 +35,7 @@ export class NewsBody extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=yugoslavia&apiKey=914f1a282559480ba84f1513c9eb320d"
+        "https://newsapi.org/v2/everything?q=zagreb&apiKey=914f1a282559480ba84f1513c9eb320d"
       )
       .then(res => {
         console.log(res);
