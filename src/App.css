@@ -137,3 +137,24 @@ body {
 .leftMenu {
     margin-top: 100px !important;
 }
+
+.newsList {
+    list-style-type: none;
+}
+
+
+/* //divs///////////////////////////////////////////////////// */
+
+.newsImage {
+    float: left;
+}
+
+.newsName {
+    float: left;
+    overflow: hidden;
+}
+
+.newsContainer {
+    clear: both;
+    margin-top: 5%;
+}
