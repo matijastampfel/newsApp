@@ -35,7 +35,7 @@ export class NewsBody extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=siria&apiKey=914f1a282559480ba84f1513c9eb320d"
+        "https://newsapi.org/v2/everything?q=yugoslavia&apiKey=914f1a282559480ba84f1513c9eb320d"
       )
       .then(res => {
         console.log(res);
@@ -63,6 +63,8 @@ export class NewsBody extends Component {
               <div className='newsTitle'>
                 <h1>{post.title}</h1>
                 {post.description}
+                <br/>
+                <a href={post.url}>Go to page</a>
               </div>
             </li>
             <br/>
